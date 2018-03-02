@@ -9,8 +9,7 @@ package.json
 ```json
 {
   "dependencies": {
-    "brace": "^0.11.1",
-    "brace-helper": "^0.1.0",
+    "brace-helper": "^0.2.0",
   }
 }
 ```
