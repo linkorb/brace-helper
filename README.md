@@ -17,14 +17,13 @@ package.json
 
 app.js:
 ```javascript
-require('brace'); // require brace for main functionality
-require('brace-helper'); // auto initialize ace editors
+import '@linkorb/brace-helper'; // auto initialize ace editors
 
-// require any modes or themes you'd like to use in your app
-require('brace/mode/javascript');
-require('brace/mode/css');
-require('brace/mode/yaml');
-require('brace/theme/monokai');
+// import any modes or themes you'd like to use in your app
+import 'brace/mode/javascript';
+import 'brace/mode/css';
+import 'brace/mode/yaml';
+import 'brace/theme/monokai';
 ```
 
 example.html:
