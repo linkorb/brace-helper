@@ -1,7 +1,7 @@
 brace-helper
 ============
 
-Brace helper will look for HTML5 elements with a given classname (`.ace-editor` by default) and turns them into an [ace editor](https://ace.c9.io/) using [brace](https://github.com/thlorenz/brace)
+`brace-helper` will look for `<textarea />` elements with a given classname (`.ace-editor` by default) and turns them into an [ace editor](https://ace.c9.io/) using [brace](https://github.com/thlorenz/brace). You can tune the ace editor by adding `data-` attributes.
 
 ## Example
 
