@@ -1,0 +1,27 @@
+{
+  "name": "brace-helper",
+  "version": "0.1.0",
+  "description": "Automaticaly initialize textareas as Ace editors through Brace",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linkorb/brace-helper.git"
+  },
+  "homepage": "https://github.com/linkorb/brace-helper",
+  "keywords": [
+    "ace",
+    "brace",
+    "editor",
+    "browser",
+    "package",
+    "bundle",
+    "inline",
+    "browserify"
+  ],
+  "author": {
+    "name": "LinkORB Engineering",
+    "email": "engineering@linkorb.com",
+    "url": "http://linkorb.com"
+  },
+  "license": "MIT"
+}
