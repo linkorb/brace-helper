@@ -1,6 +1,6 @@
 {
-  "name": "brace-helper",
-  "version": "0.1.0",
+  "name": "@linkorb/brace-helper",
+  "version": "0.2.0",
   "description": "Automaticaly initialize textareas as Ace editors through Brace",
   "main": "index.js",
   "repository": {
@@ -18,10 +18,15 @@
     "inline",
     "browserify"
   ],
-  "author": {
-    "name": "LinkORB Engineering",
-    "email": "engineering@linkorb.com",
-    "url": "http://linkorb.com"
+  "author": "LinkORB Engineering <engineering@linkorb.com> (http://linkorb.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linkorb/brace-helper/issues"
   },
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "brace": "^0.11.1"
+  }
 }
