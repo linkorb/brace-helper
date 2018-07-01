@@ -9,7 +9,7 @@ package.json
 ```json
 {
   "dependencies": {
-    "brace-helper": "^0.2.0",
+    "@linkorb/brace-helper": "^0.2.0",
   }
 }
 ```
