@@ -2,6 +2,7 @@ var ace = require('brace');
 
 function braceHelper() {
   var selector = '.ace-editor', defaultTheme = 'monokai', defaultMode = 'html', defaultLines = 10;
+  var   defaultTabSize = 4, defaultSfotTabs=false, defaultShowInvisibles= true;
 
   // details: https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
   [...document.querySelectorAll(selector)].forEach(function(element, index) {
@@ -9,6 +10,9 @@ function braceHelper() {
     var mode = element.dataset.mode || defaultMode;
     var theme = element.dataset.theme || defaultTheme;
     var lines = element.dataset.lines || defaultLines;
+    var tabsizeVal = element.dataset.tabsize || defaultTabSize;
+    var softTabs =  (element.hasAttribute('data-soft_tab'))? element.dataset.sfot_tabs : defaultSfotTabs;
+    var invisibles = (element.hasAttribute('data-show_invisible'))?  ((element.dataset.show_invisible === "true")? true : false)  : defaultShowInvisibles;
 
     if (element.tagName == 'TEXTAREA') {
         var div = document.createElement('div');
@@ -28,7 +32,10 @@ function braceHelper() {
     editor.getSession().setMode('ace/mode/'+mode);
     editor.setOptions({
         minLines: lines,
-        maxLines: lines
+        maxLines: lines,
+        tabSize: tabsizeVal,
+        useSoftTabs: softTabs,
+        showInvisibles: invisibles
     });
   });
 }
