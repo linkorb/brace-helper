@@ -32,6 +32,16 @@ example.html:
 
 This textarea will now be automatically converted into an ace editor with css highlighting.
 
+## data attributes list
+```
+# tabSize
+  data-tabsize=4
+# useSoftTabs: value "true" or "false"
+  data-soft_tab="true"
+#showInvisibles value "true" or "false"
+  data-show_invisible="false"
+```
+
 
 ## Inspiration
 
